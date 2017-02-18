@@ -27,3 +27,6 @@ class Cowsay(unittest.TestCase):
                     ' ----',
                     '\n     \\   ^__^\n      \\  (oo)\\_______\n         (__)\\       )\\/\\\n             ||----w |\n             ||     ||\n']
         self.assertEqual( expected, cowsay('test'))
+
+if __name__ == '__main__':
+    unittest.main()
