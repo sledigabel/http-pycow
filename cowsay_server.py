@@ -6,6 +6,12 @@ from os import getpid, getlogin, getuid, getgid, getcwd
 from socket import getfqdn
 
 
+@route('/healthcheck')
+def healthcheck():
+    response.content_type = 'text/plain'
+    return 'imok'
+
+
 @route('/')
 def root():
     response.content_type = 'text/plain'
